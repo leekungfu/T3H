@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="signin-form">
+        <h1>Đăng nhập</h1>
+        <form onsubmit="handleClickSignin(event)" action="#">
+          <div>
+            <p for="email">Email</p>
+            <input id="email" type="text" placeholder="Enter your email" />
+          </div>
+          <div>
+            <p for="password">Password</p>
+            <input id="password" type="password" placeholder="********" />
+          </div>
+          <button class="btn" type="submit">Đăng nhập</button>
+        </form>
+      </div>
+      <div class="divider"></div>
+      <div class="signup-form">
+        <h1>Đăng ký</h1>
+        <form onsubmit="handleClickSignup(event)" action="#">
+          <div>
+            <p for="first-name">FirstName</p>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div>
+            <p for="last-name">LastName</p>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div>
+            <p for="signup-email">Email</p>
+            <input
+              id="signup-email"
+              type="text"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div>
+            <p for="signup-password">Password</p>
+            <input
+              id="signup-password"
+              type="password"
+              placeholder="********"
+            />
+          </div>
+          <button class="btn" type="submit">Đăng ký</button>
+        </form>
+      </div>
+      <div class="divider"></div>
+      <div class="search">
+        <div>
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div>
+          <input type="search" id="search-user" placeholder="Enter keyword" />
+          <button type="button" onclick="review(event)">Search</button>
+        </div>
+        <div class="list-user">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width: 15%">ID</th>
+                <th>Họ và tên</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody class="list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

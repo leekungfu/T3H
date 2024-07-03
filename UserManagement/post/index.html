@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-with-id">
+        <div>
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div>
+          <input type="search" id="search-post" placeholder="Enter ID" />
+          <button type="button" onclick="handleClickSearch(event)">
+            Search
+          </button>
+        </div>
+        <div class="list-post"></div>
+        <div class="list-user">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width: 15%">ID</th>
+                <th>Tiêu đề</th>
+                <th>Ngày tạo</th>
+                <th>Tên người tạo</th>
+              </tr>
+            </thead>
+            <tbody class="list"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="search-with-email">
+        <div>
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div>
+          <input
+            type="search"
+            id="search-with-email"
+            placeholder="Enter email"
+          />
+          <button type="button" onclick="handleClickSearchWithEmail(event)">
+            Search
+          </button>
+        </div>
+        <div class="list-user">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width: 15%">ID</th>
+                <th>Tiêu đề</th>
+                <th>Nội dung</th>
+                <th>Link ảnh</th>
+                <th>Tên người tạo</th>
+                <th>Ngày tạo</th>
+                <th>Ngày sửa</th>
+              </tr>
+            </thead>
+            <tbody class="posts"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./posts.js"></script>
+</html>
